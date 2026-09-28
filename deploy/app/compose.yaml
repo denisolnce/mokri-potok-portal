@@ -18,6 +18,19 @@ services:
       WEATHER_LOCATION: Kočevje
       # Notifications say "today" / "tomorrow" against the village's own date.
       TZ: Europe/Ljubljana
+      # The feedback chip: emailed through Resend when all three are set in the
+      # VM's /opt/doco-cd/secrets.env (doco-cd PASS_ENV), else written to the
+      # log. Empty is a valid state.
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      FEEDBACK_TO: ${FEEDBACK_TO:-}
+      EMAIL_FROM: ${EMAIL_FROM:-}
+    # Feedback lands in the log until email is wired, reply addresses with it:
+    # keep the log small.
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
     volumes:
       # Must be owned by uid 65532 on the host (image runs as nonroot).
       - /srv/mokri-potok/data:/data
