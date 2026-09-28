@@ -26,8 +26,8 @@ deploy/map/               parcels.geojson (GURS cadastre, snapshot 2026-08-15; t
                           is a closed karst basin, a course drawn from 2 ha of catchment and 250 m of length, named
                           from 100 ha. The method is the homestead repo's 10-site/terrain-data/water.py; the
                           portal draws whatever the row holds and knows none of this.
-                          The picture behind the gate is porta-pagi's built-in backdrop.jpg — the owner's own
-                          screenshot of a map service, provenance TBD — until this village imports its own.
+                          The picture behind the gate is porta-pagi's built-in backdrop.jpg, a Google Maps
+                          screenshot the owner keeps by choice (2026-09-28); a steward can replace it from ⚙️.
 deploy/infra-log.md       what was done by hand on the VM, in order — the one place allowed to be a changelog
 .claude/context/village.md who uses the portal and why each room is shaped as it is
 .claude/agents/reviewer.md, .claude/hooks/   the end-of-turn reviewer; every turn that changed files invokes it
@@ -67,7 +67,7 @@ Pointers, not values — each fact has one owner:
   its `deploy/infra-log.md`.
 - **What waits on the owner:** product decisions in
   `porta-pagi/docs/later.md` § Open decisions; the landing's open strings in
-  `porta-pagi/docs/commercial.md` §11 row 3; feedback email, above.
+  `porta-pagi-cloud/docs/commercial.md` §11 rows 3–4 (private); feedback email, above.
 
 ## Working rules
 
