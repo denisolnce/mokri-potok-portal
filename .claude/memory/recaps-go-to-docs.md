@@ -13,14 +13,14 @@ owner wants **conversations** held to the same rule, not only code changes.
 **How to apply:** a turn that brainstorms or defers ends with `docs/later.md`
 updated. A turn that decides ends with the owning doc updated.
 
-Widened 2026-09-28, after instructions for wiring feedback email were given
+Widened 2026-09-28, after the steps for wiring feedback email were given
 only in chat: "record it in repo for cold starts to know whats up. always
 record stuff like this at the end of turns".
 
-**How to apply, at the end of every turn:** anything the owner must do
-(steps, secrets, decisions), how to operate something new, and what is live
-where goes into the repo before the turn ends — the how-to beside the thing
-it operates (`CLAUDE.md` § Rolling the village and its neighbours), the
-current picture in `CLAUDE.md` § State and what waits on the owner, product
-decisions in `porta-pagi/docs/later.md`. Chat may repeat it; chat is never
-the only copy.
+**How to apply, at the end of a turn:** anything the owner was told in chat
+to do, or how to do, goes into the doc that owns it before the turn ends —
+steps beside the thing they operate, a decision in `porta-pagi/docs/later.md`
+§ Open decisions. `CLAUDE.md` § Where to look on a cold start holds pointers
+only, so it changes only when a new kind of fact gets a home. A turn that
+hands the owner nothing writes nothing. Chat may repeat it; chat is never the
+only copy.
