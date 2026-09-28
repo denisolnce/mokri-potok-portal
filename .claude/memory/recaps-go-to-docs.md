@@ -1,6 +1,6 @@
 ---
 name: recaps-go-to-docs
-description: The owner wants a recap or brainstorm to end with the repo's docs updated, not left in chat (stated 2026-09-07)
+description: Every turn ends with its state, how-tos and owner to-dos recorded in the repo, not left in chat (2026-09-07, widened 2026-09-28)
 metadata:
   type: feedback
 ---
@@ -12,3 +12,15 @@ owner wants **conversations** held to the same rule, not only code changes.
 
 **How to apply:** a turn that brainstorms or defers ends with `docs/later.md`
 updated. A turn that decides ends with the owning doc updated.
+
+Widened 2026-09-28, after instructions for wiring feedback email were given
+only in chat: "record it in repo for cold starts to know whats up. always
+record stuff like this at the end of turns".
+
+**How to apply, at the end of every turn:** anything the owner must do
+(steps, secrets, decisions), how to operate something new, and what is live
+where goes into the repo before the turn ends — the how-to beside the thing
+it operates (`CLAUDE.md` § Rolling the village and its neighbours), the
+current picture in `CLAUDE.md` § State and what waits on the owner, product
+decisions in `porta-pagi/docs/later.md`. Chat may repeat it; chat is never
+the only copy.

@@ -51,6 +51,36 @@ The map, the codex and the backdrop are rows in the database, entered once:
 The codex seed stays off this repo: the repo is public and the text is the
 collective's. The way back in when nobody is logged in: `task vm:code -- "<house>"`.
 
+**Feedback by email** (the chip beside the Changelog). Until it is wired,
+feedback goes to the container log, which rotates at 30 MB, so it is not
+kept. To wire it — the owner's step, the key is a secret:
+1. In Resend, create an API key (sending access) and verify a sending domain.
+2. Add to `gaias-choice/.env`: `RESEND_API_KEY=…`, `FEEDBACK_TO=<inbox>`,
+   `EMAIL_FROM=Porta Pagi <feedback@<verified domain>>`.
+3. In `gaias-choice`: `task doco:secrets`. The village and the demo pick the
+   keys up at their next redeploy (any push here, or a roll).
+Then send one feedback from the portal and read `task vm:logs` for a
+`FEEDBACK (could not send …)` line. Log it in `deploy/infra-log.md`.
+
+## State and what waits on the owner
+
+Updated at the end of every turn that changes it (owner's rule 2026-09-28),
+so a cold start knows what is up. As of 2026-09-28:
+
+- **Live:** the village runs porta-pagi `sha-d68bd77` (switches with the
+  campground on, dues and roster off; orders; feedback; contacts by letter).
+  The demo `pp-demo.gardenofatlantis.com` and the landing
+  `porta-pagi.gardenofatlantis.com` run beside it on the same VM, deployed
+  from the gaias-choice stack (its `.doco-cd.yml` tags `PAGI_DEMO_TAG`,
+  `PAGI_SITE_TAG`).
+- **Waiting on the owner:** feedback email (above); three decisions in
+  `porta-pagi/docs/later.md` § Open decisions — the roster's zero for a house
+  with no phone, the `joint` give-away tag, and past events older than 60
+  days leaving the calendar (likely a bug); the landing's footer email
+  (a placeholder), and the collective's yes before the landing names the
+  valley (`porta-pagi/docs/commercial.md` §11 row 3). The landing is
+  `noindex` until the porta-pagi source repo goes public.
+
 ## Working rules
 
 - **This repo is public.** The village name and the public GURS data are the
