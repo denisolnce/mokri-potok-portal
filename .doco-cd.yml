@@ -1,8 +1,12 @@
 # doco-cd deploy config. The controller on the gaias-choice VM polls this repo
 # (second entry in that repo's deploy/controller/poll.yaml) and reconciles
-# deploy/app/ on every push to main. Non-secrets only — this stack has no
-# secrets: the first steward code is generated on first boot and read from
-# `docker logs`. BE_TAG is a porta-pagi build, rolled by `task roll`.
+# deploy/app/ on every push to main. Non-secrets only here. The stack's one
+# optional secret, RESEND_API_KEY (with FEEDBACK_TO and EMAIL_FROM, for the
+# feedback chip), comes from the controller's /opt/doco-cd/secrets.env via
+# PASS_ENV; that file is gaias-choice's, written by its `task doco:secrets`
+# from its .env. Unset, feedback goes to the log. The first steward code is
+# generated on first boot and read from `docker logs`. BE_TAG is a porta-pagi
+# build, rolled by `task roll`.
 name: mokri-potok
 working_dir: deploy/app
 environment:
