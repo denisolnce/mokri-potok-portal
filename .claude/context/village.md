@@ -59,8 +59,9 @@ That file is the one home for "not yet".
 - Renown points, quests, leaderboards. Counted reciprocity turns into debt.
 - Money of any kind. Public pages — with one exception: the gate (login page)
   stands in front of the aged aerial photo of the village, by the owner's
-  choice, on a repo that is itself public. Provenance of that image: `TBD`
-  (own screenshot of a map service; licence not recorded).
+  choice, on a repo that is itself public. It is a Google Maps screenshot; the
+  owner keeps it knowing the licence is Google's (decided 2026-09-28), and a
+  steward can replace it from ⚙️.
 - WhatsApp login via Meta's Business API — the invite link *is* the WhatsApp login.
 - Offline caching in the service worker. A stale shell after a deploy costs
   more than a reload on village Wi-Fi.
