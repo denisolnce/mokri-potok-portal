@@ -1,7 +1,7 @@
 # mokri-potok-portal
 
 The deploy repo of the Mokri Potok village's portal. The portal itself is
-**Porta Pagi** — `github.com/dennislapchenko/porta-pagi` — built by this
+**Porta Pagi** — `github.com/denisolnce/porta-pagi` — built by this
 collective and run from here: this repo holds the village's compose file and
 env, the image tag it runs, its map seed and its VM notes. `CLAUDE.md` says
 what lives where and how a release rolls.

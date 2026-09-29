@@ -4,7 +4,7 @@ Target state of the backend stack on the shared VM. What was actually done by
 hand, in order, is `infra-log.md`.
 
 - `app/compose.yaml` — one service, `potok-api`, on the porta-pagi image
-  (`ghcr.io/dennislapchenko/porta-pagi`) pinned by `BE_TAG` in `/.doco-cd.yml`. Joins `gaias-choice_default` as an external
+  (`ghcr.io/denisolnce/porta-pagi`) pinned by `BE_TAG` in `/.doco-cd.yml`. Joins `gaias-choice_default` as an external
   network so that repo's Caddy can `reverse_proxy potok-api:8788`.
 - Data: host bind mount `/srv/mokri-potok/data` (SQLite + `backups/`).
 - Edge: none here. The gaias-choice repo's `deploy/app/Caddyfile` proxies the
