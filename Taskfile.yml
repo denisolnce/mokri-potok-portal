@@ -10,7 +10,7 @@ tasks:
       - test -n "{{.CLI_ARGS}}" || { echo "which tag? task roll -- sha-<commit>"; exit 1; }
       # A typo would land on the VM as a failing pull: the tag must exist, and be public, before anything is written.
       # Credential-less on purpose — this machine is logged in to ghcr.io, the VM is not.
-      - DOCKER_CONFIG=$(mktemp -d) docker manifest inspect ghcr.io/dennislapchenko/porta-pagi:{{.CLI_ARGS}} >/dev/null
+      - DOCKER_CONFIG=$(mktemp -d) docker manifest inspect ghcr.io/denisolnce/porta-pagi:{{.CLI_ARGS}} >/dev/null
       - git diff --quiet && git diff --cached --quiet || { echo "commit or stash first"; exit 1; }
       - git pull -q --rebase origin main
       # Block scalars: a colon and a space ("BE_TAG: ", "deploy: ") is a key to plain YAML.
