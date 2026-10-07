@@ -127,3 +127,10 @@
   `foreign_key_check` empty, `integrity_check` ok. The copy and the
   rehearsal's log were deleted afterwards.
 - The demo ran the same image first, from `d3f7fa4` the same day.
+- Rolled the same evening (`51f58da`): the container came up healthy on
+  `sha-2c8b0c1…` with no restart, `migrated 029_almanac_birthdays_recur.sql`
+  in its log, the same 17 answers, and the sky written for 2026 and 2027
+  with place `arso:Kočevje` — ARSO's point answered on the first round. Three
+  eclipses seen from here: 12 August 2026 (sun, setting during it),
+  28 August 2026 (moon, setting during it), 2 August 2027 (sun). Read with
+  Python's sqlite3, read-only: the host has no `sqlite3` binary.
