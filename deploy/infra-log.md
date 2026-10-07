@@ -115,3 +115,15 @@
   `ghcr.io/dennislapchenko/porta-pagi:sha-1fbbe4d…` at 20:13: healthy, no
   migration in the log, `/api/status` unchanged. The VM pulls anonymously, so
   the package must stay public; the source repo stays private for now.
+
+### 8. The calendar's migration — 2026-10-07
+- Porta Pagi `2c8b0c1` brings the sky, birthdays and events that repeat.
+  Its migration `029` rebuilds `event_signups`, the first migration to
+  rebuild a table this village has rows in, so it was rehearsed first: last
+  night's `potok-2026-10-07.db` copied off the box, the new binary's
+  migrations run on the copy. Before: 6 events, 17 answers, 12 of them yes,
+  last migration `028`. After: the same 6 / 17 / 12, every answer's day
+  (`occurs_on`) empty and every event a one-off, last migration `029`,
+  `foreign_key_check` empty, `integrity_check` ok. The copy and the
+  rehearsal's log were deleted afterwards.
+- The demo ran the same image first, from `d3f7fa4` the same day.
