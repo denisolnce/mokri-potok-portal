@@ -58,7 +58,9 @@ not kept. The steps are the owner's (the key is a secret) and live in
 
 ## Where to look on a cold start
 
-Pointers, not values — each fact has one owner:
+Since 2026-10-07 the owner works on this project from sessions started in
+`porta-pagi`; its `docs/project.md` maps all four repos, the VM and how each
+place ships. Pointers, not values — each fact has one owner:
 - **What the village runs:** `BE_TAG` in `.doco-cd.yml`; the manual history
   in `deploy/infra-log.md`.
 - **Which rooms are switched on here:** `.claude/context/village.md`.
