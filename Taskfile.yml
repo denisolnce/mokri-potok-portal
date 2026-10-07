@@ -11,15 +11,18 @@ tasks:
       # A typo would land on the VM as a failing pull: the tag must exist, and be public, before anything is written.
       # Credential-less on purpose — this machine is logged in to ghcr.io, the VM is not.
       - DOCKER_CONFIG=$(mktemp -d) docker manifest inspect ghcr.io/denisolnce/porta-pagi:{{.CLI_ARGS}} >/dev/null
-      - git diff --quiet && git diff --cached --quiet || { echo "commit or stash first"; exit 1; }
-      - git pull -q --rebase origin main
+      # What the village gets that day rides in the roll's own commit: its context file and the manual log.
+      # Anything else is committed first.
+      - |
+        test -z "$(git status --porcelain | grep -v -e ' .claude/context/village.md$' -e ' deploy/infra-log.md$')" || { echo "commit or stash first (only village.md and infra-log.md ride along)"; exit 1; }
+      - git pull -q --rebase --autostash origin main
       # Block scalars: a colon and a space ("BE_TAG: ", "deploy: ") is a key to plain YAML.
       - |
         perl -pi -e 's|^(  BE_TAG: ).*|${1}{{.CLI_ARGS}}|' .doco-cd.yml
       - |
         grep -q "^  BE_TAG: {{.CLI_ARGS}}$" .doco-cd.yml
       - |
-        git add .doco-cd.yml && git commit -m "deploy: roll portal to {{.CLI_ARGS}}" && git push origin main
+        git add .doco-cd.yml .claude/context/village.md deploy/infra-log.md && git commit -m "deploy: roll portal to {{.CLI_ARGS}}" && git push origin main
   vm:logs:
     desc: tail the backend on the VM (bootstrap code shows here on first boot)
     cmds: ["ssh -p 13337 -i ~/.ssh/gaia root@gaias-choice.gardenofatlantis.com 'docker logs --tail 100 -f mokri-potok-potok-api-1'"]

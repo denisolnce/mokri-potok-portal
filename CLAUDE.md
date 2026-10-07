@@ -40,7 +40,11 @@ pushes; the VM's doco-cd reconciles within ~2 min. The tag must exist in the
 `porta-pagi` package (its CI pushes `sha-<commit>` on every push to `main`
 there), and **the package must be public** — the VM pulls anonymously, and a
 private package leaves it on the old container with doco-cd failing quietly.
-`task roll` checks the tag exists before it writes anything. A migration
+`task roll` checks the tag exists before it writes anything. A roll that
+brings the village a room, a kind or a calendar change carries
+`.claude/context/village.md` in its own commit, and a rehearsal or a hand
+step its `deploy/infra-log.md` entry: `task roll` takes those two files
+uncommitted and refuses anything else. A migration
 in that commit runs at the roll; rehearse it on a copy of last night's backup
 (`task vm:backup`) when it touches a table this village has rows in. What a
 release needs from this repo — a new env variable, a CLI to run — is in the
