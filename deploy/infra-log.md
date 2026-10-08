@@ -134,3 +134,14 @@
   eclipses seen from here: 12 August 2026 (sun, setting during it),
   28 August 2026 (moon, setting during it), 2 August 2027 (sun). Read with
   Python's sqlite3, read-only: the host has no `sqlite3` binary.
+
+### 9. The VM's security updates and reboot — 2026-10-08
+- The VM is gaias-choice's (its `deploy/infra-log.md`, § Security posture,
+  owns the setup). Security updates were applied in the day, then the owner
+  rebooted the box into the new kernel at about 12:09 UTC (14:09 here), in
+  the afternoon by the owner's choice, not the night window.
+- The village was down for under a minute: the box booted at 12:09:27 UTC
+  and the portal listened again at 12:09:40, the same container on the same
+  tag (`sha-9d7599c…`) and the same data directory, healthy, `/api/healthz`
+  ok, no migration. The moment the shutdown began is in no log: the box's
+  journal does not survive a reboot.
