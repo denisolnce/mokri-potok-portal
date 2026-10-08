@@ -11,6 +11,6 @@ name: mokri-potok
 working_dir: deploy/app
 environment:
   PUSH_SUBJECT: https://vas.mokri-potok.si/
-  BE_TAG: sha-6f6dd7c61d0ab47fcdf0a7ea556d33ef8028c22e
+  BE_TAG: sha-f4b564d9d0e59d7f6aa878cd1a5cc02dda2af520
 reconciliation:
   events: [unhealthy]
