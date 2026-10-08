@@ -68,7 +68,7 @@ repos and how each place ships. Pointers, not values — each fact has one owner
 - **What the village runs:** `BE_TAG` in `.doco-cd.yml`; the manual history
   in `deploy/infra-log.md`.
 - **Which rooms are switched on here:** `.claude/context/village.md`.
-- **The demo and the landing** (`pp-demo.` and `porta-pagi.gardenofatlantis.com`,
+- **The demo and the landing** (`demo.portapagi.com` and `portapagi.com`,
   same VM): `gaias-choice/.doco-cd.yml` (`PAGI_DEMO_TAG`, `PAGI_SITE_TAG`) and
   its `deploy/infra-log.md`.
 - **What waits on the owner:** product decisions in
