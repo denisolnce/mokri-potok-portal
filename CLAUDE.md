@@ -17,7 +17,8 @@ is a commit in `porta-pagi`, a CI build there, and a tag roll here.
 
 ```
 deploy/app/compose.yaml   the one service, potok-api, on ghcr.io/denisolnce/porta-pagi pinned by BE_TAG;
-                          the village's env: VILLAGE_NAME, LANGUAGES, PUBLIC_URL, PUSH_SUBJECT, WEATHER_*, TZ
+                          the village's env: VILLAGE_NAME, LANGUAGES, PUBLIC_URL, PUSH_SUBJECT, WEATHER_*, TZ; no PAGI_LICENCE_KEY:
+                          the village is under the product's ten-house grant (porta-pagi's licence invariant)
 .doco-cd.yml              what the VM's doco-cd polls; BE_TAG is the image the village runs — rolled by `task roll`
 deploy/map/               parcels.geojson (GURS cadastre, snapshot 2026-08-15; the GURS attribution string is
                           still TBD) and water.json — the seed for the portal's map_files rows, imported once by
