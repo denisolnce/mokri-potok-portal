@@ -20,8 +20,8 @@ deploy/app/compose.yaml   the one service, potok-api, on ghcr.io/denisolnce/port
                           the village's env: VILLAGE_NAME, LANGUAGES, PUBLIC_URL, PUSH_SUBJECT, WEATHER_*, TZ; no PAGI_LICENCE_KEY:
                           the village is under the product's free grant (porta-pagi's licence invariant)
 .doco-cd.yml              what the VM's doco-cd polls; BE_TAG is the image the village runs — rolled by `task roll`
-deploy/map/               parcels.geojson (GURS cadastre, snapshot 2026-08-15, CC BY 4.0: the map credits
-                          "Geodetska uprava Republike Slovenije, CC BY 4.0" beside the date) and water.json — the seed for the portal's map_files rows, imported once by
+deploy/map/               parcels.geojson (GURS cadastre, snapshot 2026-08-15; the map credits
+                          "Geodetska uprava Republike Slovenije, CC BY 4.0") and water.json — the seed for the portal's map_files rows, imported once by
                           `task vm:map`. The water is this village's model: an epsilon priority-flood + D8 run on
                           ARSO DMR 1 m over E485000-488000 N44800-47600, the fill capped at 2 m because the village
                           is a closed karst basin, a course drawn from 2 ha of catchment and 250 m of length, named
