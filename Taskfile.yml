@@ -37,7 +37,7 @@ tasks:
   vm:map:
     desc: 'import the map data from deploy/map into the village database: task vm:map (parcels with source and snapshot date, then water)'
     cmds:
-      - ssh -p 13337 -i ~/.ssh/gaia root@gaias-choice.gardenofatlantis.com 'docker exec -i mokri-potok-potok-api-1 /server map-import parcels GURS 2026-08-15' < deploy/map/parcels.geojson
+      - ssh -p 13337 -i ~/.ssh/gaia root@gaias-choice.gardenofatlantis.com 'docker exec -i mokri-potok-potok-api-1 /server map-import parcels "Geodetska uprava Republike Slovenije, CC BY 4.0" 2026-08-15' < deploy/map/parcels.geojson
       - ssh -p 13337 -i ~/.ssh/gaia root@gaias-choice.gardenofatlantis.com 'docker exec -i mokri-potok-potok-api-1 /server map-import water' < deploy/map/water.json
   vm:backdrop:
     desc: 'the picture behind the gate, from a file: task vm:backdrop -- picture.jpg (jpeg, png or webp, under 2 MB)'

@@ -72,9 +72,10 @@ That file is the one home for "not yet".
 `deploy/map/parcels.geojson`, imported once into the `map_files` table (the
 map lives in the database so the backup is the whole village): ~500 parcels of
 k.o. 1590, public cadastre WFS snapshot 2026-08-15, EPSG:3794 metres, rounded
-to 0.1 m. The
-GURS open-data licence string is not recorded yet — it must be, before the
-portal moves to the collective's own domain. Drawn as
+to 0.1 m. GURS
+publishes it under CC BY 4.0 and asks every map to name it, the kind of data
+and its date: the map's note reads "Cadastre snapshot 2026-08-15 (Geodetska
+uprava Republike Slovenije, CC BY 4.0)". Drawn as
 SVG with northing flipped; no tiles. `water.json` is the watercourse network a
 D8 flow model finds across the whole village on ARSO 1 m bare earth — the
 villager job is "show me the potok", so a course is drawn once 2 ha of land

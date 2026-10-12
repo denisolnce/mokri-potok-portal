@@ -145,3 +145,14 @@
   `/api/healthz` ok, no migration. The moment the shutdown began is in no
   log, the box's journal does not survive a reboot, so the whole outage is
   not measured.
+
+### 10. The map credits GURS — 2026-10-12
+- GURS's general terms (CC BY 4.0) ask every map to name Geodetska uprava
+  Republike Slovenije, the kind of data and its date. The note under the map
+  already gives "Cadastre snapshot" and the date, so the import's source
+  became "Geodetska uprava Republike Slovenije, CC BY 4.0" (it was "GURS").
+- Only the parcels were imported again, the same file
+  (`map-import parcels … 2026-08-15`); the water carries no credit and was
+  not touched. Checked on the box: `map_files` shows the new source, the
+  houses' land assignments are untouched (a separate table), the portal
+  answers. The look was checked first on the demo at 375 px: two lines.
