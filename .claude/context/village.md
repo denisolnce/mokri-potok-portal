@@ -100,28 +100,13 @@ from the product's list (`porta-pagi/docs/later.md`) on 2026-10-21, when that
 repo went public: they are the village's business, not the product's. Who
 answers each is the collective; where the answer goes is named in each.
 
-- **The treasurer, and who camp money is handed to.** Recorded in porta-pagi
-  `CLAUDE.md` § Campground once decided.
-- **The one-page privacy note**, which the village was never given (the
-  collective's board decides, a lawyer confirms; it is the same paper as the
-  product's privacy note for paying villages). It owes:
-  - a line about campers;
-  - a line about agents: an away-notice can be read by a neighbour's
-    assistant, as it can by a neighbour's phone. The argument for putting the
-    Watchtower on the agent surface only works if the village is told;
-  - a line about the phone book: the contacts room holds numbers of people
-    outside the village — a well-driller, a vet, an office — who never joined
-    and cannot switch anything off, and an agent reads those too. That is the
-    argument for keeping the room to numbers a tradesman hands out anyway, and
-    against it ever growing a field about a person;
-  - a line about birthdays: a birthday holds a person's name, year and maybe
-    hour of birth; every house and every house's agent reads it, the export
-    carries it, and any house may write anyone's down — the form asks for the
-    person's yes, nothing enforces it;
-  - a line about the feedback door: what a house writes there, and the reply
-    address if it gives one, go to Resend (an email processor) and the
-    builder's inbox, and no table keeps them — until email is wired they sit
-    in the container log.
+- **The treasurer, and who camp money is handed to.** The answer is a house,
+  so it stays in the app and with the collective, never in a repo; at most
+  the role goes under § People and roles.
+- **Adopting the privacy note.** The product owes every village a one-page
+  note (`porta-pagi/docs/later.md`, its first row, and `docs/privacy.md` once
+  written); this village was never given one. The collective's board adopts
+  it for its houses when it exists.
 - **Does editing the codex in the app amend the adopted text, or propose an
   amendment for the council?** Today any house edits and the section names
   it; the first edit replaces the council's wording with no copy kept but the
@@ -130,6 +115,9 @@ answers each is the collective; where the answer goes is named in each.
 - **Which language of the adopted codex is the text**, where the two do not
   carry the same number of principles in one section. Settled in the codex
   itself, in the app.
+- **A second steward**, the exit plan (§ People and roles).
+- **The all-kinds-on push default** once more houses join: every house says,
+  after a week (§ Notifications in the rooms table).
 
 ## Where the thinking lives
 
