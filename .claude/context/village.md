@@ -104,8 +104,8 @@ answers each is the collective; where the answer goes is named in each.
   so it stays in the app and with the collective, never in a repo; at most
   the role goes under § People and roles.
 - **Adopting the privacy note.** The product owes every village a one-page
-  note (`porta-pagi/docs/later.md`, its first row, and `docs/privacy.md` once
-  written); this village was never given one. The collective's board adopts
+  note (`porta-pagi/docs/later.md` § Open decisions that block nothing today,
+  the privacy-note row, and `porta-pagi/docs/privacy.md` once written); this village was never given one. The collective's board adopts
   it for its houses when it exists.
 - **Does editing the codex in the app amend the adopted text, or propose an
   amendment for the council?** Today any house edits and the section names
