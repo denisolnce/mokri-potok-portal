@@ -93,6 +93,44 @@ lives. It puts the renter's crest on the map beside the crest of the house whose
 land it is, and gives the Houses room something true to print where a landholder
 has parcel numbers.
 
+## Open questions for the collective
+
+Questions only this village answers, about how it runs its portal. Moved here
+from the product's list (`porta-pagi/docs/later.md`) on 2026-10-21, when that
+repo went public: they are the village's business, not the product's. Who
+answers each is the collective; where the answer goes is named in each.
+
+- **The treasurer, and who camp money is handed to.** Recorded in porta-pagi
+  `CLAUDE.md` § Campground once decided.
+- **The one-page privacy note**, which the village was never given (the
+  collective's board decides, a lawyer confirms; it is the same paper as the
+  product's privacy note for paying villages). It owes:
+  - a line about campers;
+  - a line about agents: an away-notice can be read by a neighbour's
+    assistant, as it can by a neighbour's phone. The argument for putting the
+    Watchtower on the agent surface only works if the village is told;
+  - a line about the phone book: the contacts room holds numbers of people
+    outside the village — a well-driller, a vet, an office — who never joined
+    and cannot switch anything off, and an agent reads those too. That is the
+    argument for keeping the room to numbers a tradesman hands out anyway, and
+    against it ever growing a field about a person;
+  - a line about birthdays: a birthday holds a person's name, year and maybe
+    hour of birth; every house and every house's agent reads it, the export
+    carries it, and any house may write anyone's down — the form asks for the
+    person's yes, nothing enforces it;
+  - a line about the feedback door: what a house writes there, and the reply
+    address if it gives one, go to Resend (an email processor) and the
+    builder's inbox, and no table keeps them — until email is wired they sit
+    in the container log.
+- **Does editing the codex in the app amend the adopted text, or propose an
+  amendment for the council?** Today any house edits and the section names
+  it; the first edit replaces the council's wording with no copy kept but the
+  nightly backup. A proposal state, or a section history, waits for the
+  village to say it wants one (porta-pagi `CLAUDE.md` § Codex).
+- **Which language of the adopted codex is the text**, where the two do not
+  carry the same number of principles in one section. Settled in the codex
+  itself, in the app.
+
 ## Where the thinking lives
 
 The design plan, the brainstormed rooms, the privacy reasoning and the exit
