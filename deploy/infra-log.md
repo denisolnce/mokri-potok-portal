@@ -156,3 +156,23 @@
   not touched. Checked on the box: `map_files` shows the new source, the
   houses' land assignments are untouched (a separate table), the portal
   answers. The look was checked first on the demo at 375 px: two lines.
+
+### 11. Login by house and PIN — 2026-11-03
+- Porta Pagi `95d8280` replaces the pairing code with a PIN of six digits,
+  chosen at the house's link, and three wrong PINs lock the house until the
+  link is opened again. Its migration `030` adds `devices.pin_hash` and the
+  `pin_tries` table, so it touches `devices`, which this village has rows in.
+- **Not rehearsed on last night's backup**: the session that built it ran in
+  a cloud container with no SSH to the VM. Rehearsed instead on a database
+  this village's own binary (`sha-f4b564d…`) wrote — a steward, a house, a
+  phone — then opened by the new one: `migrated 030_pins.sql`, the phone
+  still signed in and without a PIN, then a PIN set and a sign-in by it. The
+  old binary started again on the migrated database with the phone's session
+  and a join both working, so a roll back is a tag edit. The migration only
+  adds a column that may be empty and a new table.
+- Rolled by the commit that carries this entry, with the five licence
+  commits not rolled before it (the free ten-house grant; no migration, no
+  new variable). **Not yet seen on the box**: `docker inspect` healthy on
+  `sha-95d8280…`, and `migrated 030_pins.sql` in `task vm:logs`. Expected
+  after it: the gate lists no house until someone chooses a PIN, every phone
+  already in stays in and Home asks it for a PIN.

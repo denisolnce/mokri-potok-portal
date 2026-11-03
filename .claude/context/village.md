@@ -9,10 +9,13 @@ the shop, when the work party is — with a game-like village map as the door.
 ## People and roles
 
 - **Houses**, not persons, are the accounts. A house holds several phones.
-- A house adds its **own** further phones with a six-digit pairing code from
-  the Houses room. The steward is not needed for that, and it is the way back
-  in after adding the portal to an iPhone home screen — the installed icon gets
-  storage of its own and starts signed out.
+- Each person of a house opens the house's invite link once (seven days, any
+  number of uses) and chooses a PIN. From then on they sign in anywhere — the
+  installed icon on an iPhone, which gets storage of its own and starts signed
+  out, a laptop, a second browser — by tapping their house on the gate and
+  typing the PIN, six digits. The steward is needed again only for a
+  forgotten PIN, or a house locked by three wrong ones: the link once more. Since 2026-11-02 (porta-pagi's § Codes and PINs); the gate
+  lists the houses with a PIN by name, for anyone who finds the address.
 - **Stewards** create houses, hand out invite links, assign parcels on the
   map, pin posts. From the ⚙️ in the top bar a steward flips the village's
   switches, mutes a notification kind for everyone, and takes the export. One steward house today (the owner's); a second one in the
