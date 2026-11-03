@@ -170,9 +170,11 @@
   old binary started again on the migrated database with the phone's session
   and a join both working, so a roll back is a tag edit. The migration only
   adds a column that may be empty and a new table.
-- Rolled by the commit that carries this entry, with the five licence
-  commits not rolled before it (the free ten-house grant; no migration, no
-  new variable). **Not yet seen on the box**: `docker inspect` healthy on
-  `sha-95d8280…`, and `migrated 030_pins.sql` in `task vm:logs`. Expected
-  after it: the gate lists no house until someone chooses a PIN, every phone
-  already in stays in and Home asks it for a PIN.
+- Rolled by `4fa071f`, with the five licence commits not rolled before it
+  (the free ten-house grant; no migration, no new variable), then minutes
+  later to `sha-c0bba91…`, two small fixes on the gate (the tries left are
+  the house's; choosing a PIN asks the browser for no strong password).
+  **Not yet seen on the box**: `docker inspect` healthy on `sha-c0bba91…`,
+  and `migrated 030_pins.sql` in `task vm:logs`. Expected after it: the gate
+  lists no house until someone chooses a PIN, every phone already in stays
+  in and Home asks it for a PIN.

@@ -61,11 +61,14 @@ That file is the one home for "not yet".
 ## Things that are deliberately not here
 
 - Renown points, quests, leaderboards. Counted reciprocity turns into debt.
-- Money of any kind. Public pages — with one exception: the gate (login page)
-  stands in front of the aged aerial photo of the village, by the owner's
-  choice, on a repo that is itself public. It is a Google Maps screenshot; the
-  owner keeps it knowing the licence is Google's (decided 2026-09-28), and a
-  steward can replace it from ⚙️.
+- Money of any kind. Public pages — with two exceptions, both on the gate
+  (login page). It stands in front of the aged aerial photo of the village,
+  by the owner's choice, on a repo that is itself public: a Google Maps
+  screenshot the owner keeps knowing the licence is Google's (decided
+  2026-09-28), which a steward can replace from ⚙️. And since 2026-11-02 it
+  lists the houses that have a PIN — name, crest, colour and the tries left —
+  so a person taps theirs (the owner's choice, "for now"; porta-pagi's
+  § Nothing is public).
 - WhatsApp login via Meta's Business API — the invite link *is* the WhatsApp login.
 - Offline caching in the service worker. A stale shell after a deploy costs
   more than a reload on village Wi-Fi.
