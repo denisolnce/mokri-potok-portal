@@ -174,7 +174,11 @@
   (the free ten-house grant; no migration, no new variable), then minutes
   later to `sha-c0bba91…`, two small fixes on the gate (the tries left are
   the house's; choosing a PIN asks the browser for no strong password).
-  **Not yet seen on the box**: `docker inspect` healthy on `sha-c0bba91…`,
-  and `migrated 030_pins.sql` in `task vm:logs`. Expected after it: the gate
-  lists no house until someone chooses a PIN, every phone already in stays
-  in and Home asks it for a PIN.
+  Seen working by the owner the same day — a PIN chosen on Home in the
+  installed app, a signed-out browser let in by it — which only a database
+  past `030` can do; `docker inspect` and the `migrated` line were not read.
+  What he found: after a PIN was saved on Home, the installed app asked
+  again, fixed in Porta Pagi `b705d91`.
+- Then rolled to `sha-07b0dff…` (2026-11-03): that fix, and the calendar a
+  house subscribes to from its own Google or Apple calendar. Its migration
+  `031` only creates a table (`calendar_feeds`), so nothing was rehearsed.
