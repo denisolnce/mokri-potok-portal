@@ -9,7 +9,7 @@ what lives where and how a release rolls.
 ```sh
 task roll -- sha-<commit>   # run this porta-pagi build on the VM (writes BE_TAG, commits, pushes)
 task vm:logs                # backend logs on the VM
-task vm:code -- "<house>"   # fresh invite link for a house, when nobody is logged in
+task vm:code -- "<house>"   # fresh invite link for a house, when nobody can sign in
 task vm:map                 # import the map seed from deploy/map once
 task vm:codex -- codex.json # import the adopted codex once
 task vm:backdrop -- pic.jpg # the picture behind the gate

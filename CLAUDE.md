@@ -54,7 +54,7 @@ release needs from this repo — a new env variable, a CLI to run — is in the
 The map, the codex and the backdrop are rows in the database, entered once:
 `task vm:map`, `task vm:codex -- codex.json`, `task vm:backdrop -- picture.jpg`.
 The codex seed stays off this repo: the repo is public and the text is the
-collective's. The way back in when nobody is logged in: `task vm:code -- "<house>"`.
+collective's. The way back in when nobody can sign in: `task vm:code -- "<house>"`.
 
 **Feedback by email** (the chip beside the Changelog) is not wired yet: until
 it is, feedback goes to the container log, which rotates at 30 MB, so it is
